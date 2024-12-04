@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="wasm_exec.js"></script>
+  </head>
+  <body>
+    <div class="hero bg-base-200 min-h-screen">
+      <div class="hero-content text-center">
+        <div class="max-w-xl">
+          <h1 class="text-5xl font-bold">Simple MLP with Go and WebAssembly</h1>
+          <p class="py-6" id="status"></p>
+          <input
+            type="file"
+            id="fileInput"
+            class="file-input file-input-bordered file-input-primary w-full"
+          />
+          <pre
+            class="text-left p-4 bg-base-100 rounded-box my-4 w-full overflow-x-auto"
+          ><code id="fileOutput">Choose a file to see its contents</code></pre>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
